@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>my-portfolio.ipynb</title>
+</head>
+
+<body>
+    <div class="popup-overlay" id="announcementPopup">
+        <section class="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+            <button class="popup-close" id="popupClose" aria-label="Close">&times;</button>
+            <span class="popup-label">GUIDE</span>
+            <h2 id="popup-title">How to use this thing...</h2>
+            <p>
+                A portfolio inspired by Jupyter Notebook,
+                because apparently, a normal portfolio wasn't
+                unique enough. (For me.)
+                <br><br>
+                See that little "<span class="play-symbol">▷</span>"
+                button? Click it. The magic happens.
+                If nothing happens, blame the developer.
+                (That's me.)
+            </p>
+            <button class="popup-action" id="popupAction">
+                Got it, boss
+            </button>
+        </section>
+    </div>
+
+    <nav class="nav-bar">
+        <a href="#top" class="nav-brand">>_Allen James Vidal</a>
+        <div class="nav-links">
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#resume">Resume</a>
+            <a href="#contacts">Contact</a>
+            <button id="theme-toggle" class="theme-toggle" type="button">☼</button>
+        </div>
+    </nav>
+
+    <main id="top" class="notebook">
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- ABOUT ME -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="about" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>ABOUT ME</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">IPython</span>.<span class="class">display</span>
+                            <span class="keyword">import</span>
+                            <span class="class">HTML</span>, <span class="function">display</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="function">display</span><span class="brackets">&#40;</span><span
+                                class="class">HTML</span><span class="keyword">&#40;</span><span class="string">"""
+                        </p>
+                        <P class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;div style="</span>
+                        </P>
+                        <P class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">display:
+                                flex;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">align-items:
+                                center;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">gap: 25px;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"&gt;</span>
+                        </P>
+                        <P class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;img style="</span>
+                        </P>
+                        <P class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">width:
+                                140px;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">height:
+                                140px;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">border-radius:
+                                50%;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">"
+                                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src="./resume/New
+                                Formal
+                                Photo.jpg"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">alt="profile-picture"</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&gt;</span>
+                        </P>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;div&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">&lt;h2&gt;</span><span class="string">Allen James Vidal</span><span
+                                class="string">&lt;/h2&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">&lt;h5 style="color: #3794ff;"&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">Automating the boring
+                                stuff</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">&lt;/h5&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">&lt;h5 style="color:
+                                #3794ff;"&gt;</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">Exploring data, solving problems
+                                and building useful
+                                solutions</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">&lt;/h5&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;/div&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;/div&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;hr&gt;</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;h2&gt;</span><span class="string">About
+                                me</span><span class="string">&lt;/h2&gt;</span><br>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;p&gt;</span><span class="string"><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I've worked across data processing,
+                                geospatial analysis,
+                                business <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;intelligence,
+                                reporting,
+                                and automation. I enjoy turning messy data <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;into useful solutions and finding
+                                smarter
+                                ways to
+                                work—because if it <br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;can be automated, why do it
+                                manually?</span><br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;/p&gt;</span><br>
+                        </p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;hr&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;h2&gt;</span><span class="string">Tools &amp;
+                            Technologies</span><span class="string">&lt;/h2&gt;</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;p&gt;</span><br><span
+                            class="string"></span><span
+                            class="string">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python
+                            🞄 MS Fabric 🞄 PySpark 🞄 SQL 🞄 Power BI 🞄 Excel 🞄 ChatGPT 🞄
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Claude</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="string">&lt;/p&gt;</span><br>
+                        <span class="string">"""</span><span class="keyword">&#41;</span><span
+                            class="brackets">&#41;</span>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section id="about-output" class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <div class="container">
+                        <img src="./resume/New Formal Photo.jpg" alt="profile-picture">
+                        <div>
+                            <h2>Allen James Vidal</h2>
+                            <h5>Automating the boring stuff</h5>
+                            <h5>Exploring data, solving problems and building useful solutions</h5>
+                        </div>
+                    </div>
+                    <hr>
+                    <h2>About me</h2>
+                    <p>
+                        I've worked across data processing, geospatial analysis, business intelligence, reporting, and
+                        automation. I enjoy turning messy data into useful solutions and finding smarter ways to
+                        work—because if it can be automated, why do it manually?
+                    </p>
+                    <hr>
+                    <h2>Tools &amp; Technologies</h2>
+                    <p>
+                        Python 🞄 MS Fabric 🞄 PySpark 🞄 SQL 🞄 Power BI 🞄 Excel 🞄 ChatGPT 🞄 Claude
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- EXPERIENCE -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="experience" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>EXPERIENCE</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">VARIABLES</span>
+                            <span class="keyword">import</span>
+                            <span>*</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">IPython</span>.<span class="class">display</span>
+                            <span class="keyword">import</span>
+                            <span class="class">HTML</span>, <span class="function">display</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="global-variable">EXPERIENCES</span> = <span class="brackets">[</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span>
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"company"</span>: <span class="string">"Unilever
+                                Philippines"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"role"</span>: <span class="string">"Data Specialist"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"period"</span>: <span class="string">"08/2025"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"highlights"</span>: <span class="brackets">[</span>
+                        </p>
+                        <!-- REPONSIBILITIES -->
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">DATA_ENGINEERING</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">APPLICATION_DEVELOPMENT</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">LOCATION_INTELLIGENCE</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">AUTOMATED_REPORTING</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">MACHINE_LEARNING</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">DATA_COLLECTION_AND_AUTOMATION</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">BUSINESS_INTELLIGENCE</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">DATA_PREPARATION</span>,
+                        </p>
+                        <p class="code-line">
+                            <span class="brackets">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"tools"</span>: <span
+                                class="global-variable">DATA_SPECIALIST_TOOL_LIST</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span>,
+                        </p>
+                        <!-- NEW JOB EXPERIENCE -->
+                        <p class="code-line">
+                            <span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;{</span>
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"company"</span>: <span class="string">"Philippine Statistics Authority
+                                (PSA)"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"role"</span>: <span class="string">"Map Data Processor"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"period"</span>: <span class="string">"10/2024 - 06/2025"</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"highlights"</span>: <span class="brackets">[</span>
+                        </p>
+                        <!-- REPONSIBILITIES -->
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">GEOSPATIAL_DATA_PROCESSING</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">MAP_DIGITIZATION_AND_UPDATES</span>,
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="global-variable">DATA_QUALITY</span>,
+                        </p>
+                        <p class="code-line">
+                            <span class="brackets">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;]</span>,
+                        </p>
+                        <p class="code-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"tools"</span>: <span
+                                class="global-variable">MAP_DATA_PROCESSOR_TOOL_LIST</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="brackets">]</span>
+                        </p>
+                        <br>
+                        <!-- FOR LOOP FOR RESULTS -->
+                        <!-- EXPERIENCE 1 -->
+                        <p class="code-line">
+                            <span class="comment"># Experience 1</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="string">"Experiences<span class="function">\n</span>"</span><span
+                                class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">display</span><span class="brackets">(</span><span
+                                class="class">HTML</span><span class="keyword">(</span><span
+                                class="global-variable">f</span><span class="string">"&lt;b&gt;</span><span
+                                class="global-variable">{</span><span class="variable"><span
+                                    class="global-variable">EXPERIENCES</span></span><span
+                                class="brackets">[</span><span class="number">0</span><span
+                                class="brackets">]</span><span class="brackets">[</span><span
+                                class="string">'company'</span><span class="brackets">]</span><span
+                                class="global-variable">}</span><span class="string">&lt;/b&gt;"</span><span
+                                class="keyword">)</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">0</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"role"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">0</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"duration"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">for</span> <span class="variable">highlight</span> <span
+                                class="keyword">in</span> <span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">0</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"highlights"</span><span
+                                class="keyword">]</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="string">"◉"</span>, <span
+                                class="variable">highlight</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">display</span><span class="brackets">(</span><span
+                                class="class">HTML</span><span class="keyword">(</span><span
+                                class="global-variable">f</span><span class="string">"&lt;b&gt;</span><span
+                                class="global-variable">{</span><span class="variable"><span
+                                    class="string">'Tools:'</span><span class="global-variable">}</span><span
+                                    class="string">&lt;/b&gt;"</span><span class="keyword">)</span><span
+                                    class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">0</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"tools"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <br>
+                        <!-- FOR LOOP FOR RESULTS -->
+                        <!-- EXPERIENCE 2 -->
+                        <p class="code-line">
+                            <span class="comment"># Experience 2</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">display</span><span class="brackets">(</span><span
+                                class="class">HTML</span><span class="keyword">(</span><span
+                                class="global-variable">f</span><span class="string">"&lt;b&gt;</span><span
+                                class="global-variable">{</span><span class="variable"><span
+                                    class="global-variable">EXPERIENCES</span></span><span
+                                class="brackets">[</span><span class="number">1</span><span
+                                class="brackets">]</span><span class="brackets">[</span><span
+                                class="string">'company'</span><span class="brackets">]</span><span
+                                class="global-variable">}</span><span class="string">&lt;/b&gt;"</span><span
+                                class="keyword">)</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">1</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"role"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">1</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"duration"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">for</span> <span class="variable">highlight</span> <span
+                                class="keyword">in</span> <span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">1</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"highlights"</span><span
+                                class="keyword">]</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="string">"◉"</span>, <span
+                                class="variable">highlight</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">display</span><span class="brackets">(</span><span
+                                class="class">HTML</span><span class="keyword">(</span><span
+                                class="global-variable">f</span><span class="string">"&lt;b&gt;</span><span
+                                class="global-variable">{</span><span class="variable"><span
+                                    class="string">'Tools:'</span><span class="global-variable">}</span><span
+                                    class="string">&lt;/b&gt;"</span><span class="keyword">)</span><span
+                                    class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="variable"><span class="global-variable">EXPERIENCES</span></span><span
+                                class="keyword">[</span><span class="number">1</span><span class="keyword">]</span><span
+                                class="keyword">[</span><span class="string">"tools"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <p>Experiences</p>
+                    <br>
+                    <h3>Unilever Philippines</h3>
+                    <p>Data Specialist</p>
+                    <p>08/2025</p>
+                    <p>◉ Built a centralized CRM in Microsoft Fabric using Medallion Architecture.</p>
+                    <p>◉ Built interactive data tools using Streamlit.</p>
+                    <p>◉ Built a Python tool for geographic and POI insights using OpenStreetMap.</p>
+                    <p>◉ Automated monthly report generation using Python and DuckDB.</p>
+                    <p>◉ Prototyped auto tagger for Tagging using TF-IDF and Logistic Regression.</p>
+                    <p>◉ Automated government data collection using Python (Web Scraping).</p>
+                    <p>◉ Created Excel and Power BI dashboards.</p>
+                    <p>◉ Tagged and validated SKU data in Excel based on Category Tree.</p>
+                    <h3>Tools:</h3>
+                    <p>[MS Fabric, Python, PySpark, SQL, Power BI, Excel, ChatGPT, Claude]
+                    </p>
+                    <br>
+                    <h3>Philippine Statistics Authority (PSA)</h3>
+                    <p>Map Data Processor</p>
+                    <p>10/2024 - 06/2025</p>
+                    <p>◉ Processed and validated census data using QGIS and QField.</p>
+                    <p>◉ Digitized buildings and updated maps.</p>
+                    <p>◉ Validated geospatial data for census operations.</p>
+                    <h3>Tools:</h3>
+                    <p>[QGIS, QField, GIS]</p>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- PROJECTS -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="projects" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>PROJECTS</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <p class="code-line">
+                            <span
+                                class="comment">#============================================================================</span>
+                            <br>
+                            <span class="comment"># DISCLAIMER: Some projects were developed for my previous company and
+                                cannot</span>
+                            <br>
+                            <span class="comment"># be publicly displayed. I'd show you, but I like having a clean legal
+                                record.</span>
+                            <br>
+                            <span class="comment"># For now, you'll have to take my word for it. Trust me, bro.</span>
+                            <br>
+                            <span
+                                class="comment">#============================================================================</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">pathlib</span>
+                            <span class="keyword">import</span>
+                            <span class="class">Path</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">IPython</span>.<span class="class">display</span>
+                            <span class="keyword">import</span> <span class="class">HTML</span>,
+                            <span class="class">Image</span>, <span class="function">display</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">VARIABLES</span>
+                            <span class="keyword">import</span>
+                            <span class="global-variable">PROJECTS</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="keyword">for</span> <span class="variable">project</span> <span
+                                class="keyword">in</span> <span class="global-variable">PROJECTS</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">image_path</span> = <span
+                                class="class">Path</span><span class="brackets">(</span><span
+                                class="variable">project</span><span class="keyword">[</span><span
+                                class="string">"image"</span><span class="keyword">]<span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> <span
+                                class="variable">image_path</span>.<span class="function">exists</span><span
+                                class="brackets">()</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function">display</span><span
+                                class="brackets">(</span><span class="class">Image</span><span
+                                class="keyword">(</span><span class="variable">filename</span>=<span
+                                class="class">str</span><span class="global-variable">(</span><span
+                                class="variable">image_path</span><span class="global-variable">)</span>, <span
+                                class="variable">width</span>=<span class="number">500</span><span
+                                class="keyword">)</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="variable">project</span><span
+                                class="keyword">[</span><span class="string">"title"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="variable">project</span><span
+                                class="keyword">[</span><span class="string">"description"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">display</span><span
+                                class="brackets">(</span><span class="class">HTML</span><span
+                                class="keyword">(</span><span class="global-variable">f</span><span
+                                class="string">"&lt;b&gt;</span><span class="global-variable">{</span><span
+                                class="variable"><span class="string">'Skills:'</span><span
+                                    class="global-variable">}</span><span class="string">&lt;/b&gt;"</span><span
+                                    class="keyword">)</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="variable">project</span><span
+                                class="keyword">[</span><span class="string">"skills"</span><span
+                                class="keyword">]</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="global-variable">f</span><span
+                                class="string">"</span><span class="string">LINK:
+                            </span><span class="keyword">{</span><span class="variable">project</span><span
+                                class="global-variable">[</span><span class="string">'links'</span><span
+                                class="global-variable  ">]</span><span class="keyword">}</span><span
+                                class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="string">"="</span> * <span
+                                class="number">81</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="brackets">)</span>
+                        </p>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section id="projects-output" class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <img src="./projects/centralizedCrmDatabase.jpg" alt="certificate">
+                    <h2>Centralized CRM Database Storage</h2>
+                    <br>
+                    <p>
+                        A centralized data platform designed to consolidate CRM data from multiple retailer accounts
+                        into a unified repository for standardized processing, reporting, and business analysis.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[MS Fabric, Delta tables, Medallion Architecture, Lakehouse, Data Engineering]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/locationIntelligenceTool.png" alt="certificate">
+                    <h2>Location Intelligence Tool</h2>
+                    <br>
+                    <p>
+                        Developed a Python-based location intelligence tool that retrieves geographic information and
+                        points of interest from user-provided place names or coordinates using OpenStreetMap, with a
+                        Streamlit interface for interactive exploration.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Python, OpenStreetMap, Streamlit, Geospatial Data, Data Visualization]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/dataCollectionAutomation.jpg" alt="certificate">
+                    <h2>Automated Data Collection</h2>
+                    <br>
+                    <p>
+                        Developed Python web-scraping workflows to automate the collection of government datasets
+                        covering population, revenue and economic dynamism, infrastructure, and other planning-related
+                        information.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Python, Playwright, Web Scraping, Data Extraction, Data Processing]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/automaticSkuTagging.jpg" alt="certificate">
+                    <h2>Automatic SKU Tagger</h2>
+                    <br>
+                    <p>
+                        Built a machine learning prototype that uses historical SKU data, TF-IDF feature extraction, and
+                        Logistic Regression to explore automated product categorization. This is to automate the
+                        tagging.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Python, Scikit-Learn, TF-IDF, Logistic Regression, ML, Text Classification]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/dashboardDaph.png" alt="certificate">
+                    <h2>Emerson x DAPH (Data Analytics Philippines) National Data Challenge 2025</h2>
+                    <br>
+                    <p>
+                        A 30-day Power BI dashboard competition using real-world manufacturing data, highlighting top
+                        data storytellers from across the country.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Advanced design & techniques, Real world dataset, Problem solving]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/dashboardDsa.png" alt="certificate">
+                    <h2>DataSense Analytics (DSA) Challenge</h2>
+                    <br>
+                    <p>
+                        DSA Data Challenge 2025 Hosted by DataSense Analytics A nationwide competition where
+                        participants transform a healthcare dataset into actionable insights using Power BI Desktop. The
+                        challenge focuses on real-world skills like data cleaning, analysis, modeling, and dashboard
+                        design.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Power BI, Data Cleaning, Data Preparation, Explanatory Data Analysis (EDA)]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                    <img src="./projects/dashboardCbms.png" alt="certificate">
+                    <h2>Excel Progress Tracker</h2>
+                    <br>
+                    <p>
+                        An interactive dashboard designed to track the progress of a Map Data Processor at the
+                        Philippine Statistics Authority (PSA). It features a search bar for easy navigation and quick
+                        access to information on processed areas.
+                    </p>
+                    <br>
+                    <h3>Skills:</h3>
+                    <p>[Microsoft Excel, Advanced Formulas, Basic VBA, Data Visualization]</p>
+                    <br>
+                    <!-- <p>LINK: link</p> -->
+                    <p>=================================================================================</p>
+                    <br>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- CERTIFICATES -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="certificates" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>CERTIFICATES</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <p class="code-line">
+                            <span class="keyword">import</span>
+                            <span class="class">os</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">pathlib</span>
+                            <span class="keyword">import</span>
+                            <span class="class">Path</span>
+                        </p>
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">IPython</span>.<span class="class">display</span>
+                            <span class="keyword">import</span>
+                            <span class="class">Image</span>, <span class="function">display</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="variable">certificate_dir</span> = <span class="brackets">(</span><span
+                                class="string">"my_portfolio/certificates/"</span><span class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="variable">certificates</span> =
+                            <span class="class">os</span>.<span class="function">listdir</span><span
+                                class="brackets">(</span><span class="variable">certificate_dir</span><span
+                                class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="keyword">for</span> <span class="variable">certificate</span> <span
+                                class="keyword">in</span> <span class="variable">certificates</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">certificate_path</span> = <span
+                                class="variable">certificate_dir</span> / <span class="variable">certificate</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">if</span> <span
+                                class="variable">certificate_path</span>.<span class="variable">suffix</span>.<span
+                                class="function">lower</span><span class="brackets">()</span> <span
+                                class="global-variable">in</span> <span class="brackets">[</span><span
+                                class="string">".png", ".jpg", ".jpeg"</span><span class="brackets">]</span>:
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="function">display</span><span
+                                class="brackets">(</span><span class="class">Image</span><span
+                                class="keyword">(</span><span class="variable">filename</span>=<span
+                                class="class">str</span><span class="global-variable">(</span><span
+                                class="variable">certificate_path</span><span class="global-variable">)</span>, <span
+                                class="variable">width</span>=<span class="number">500</span><span
+                                class="keyword">)</span><span class="brackets">)</span>
+                        </p>
+                        <p class="code-line">
+                            &nbsp;&nbsp;&nbsp;&nbsp;<span class="function">print</span><span
+                                class="brackets">(</span><span class="variable">certificate</span><span
+                                class="brackets">)</span>
+                        </p>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section id="certificates-output" class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <img src="./certificates/dataSciencePy.png" alt="certificate">
+                    <p>Data Science Essentials with Python.png</p>
+                    <img src="./certificates/python.png" alt="certificate">
+                    <p>Fundamentals of Python Programming.png</p>
+                    <img src="./certificates/mySql.png" alt="certificate">
+                    <p>MySQL Essentials (The Why, What and How).png</p>
+                    <img src="./certificates/powerBi.png" alt="certificate">
+                    <p>Data Analytics Challenge: Power BI dashboard.png</p>
+                    <img src="./certificates/daPh.png" alt="certificate">
+                    <p>Emerson x DAPH: National Data Challenge.png</p>
+                    <img src="./certificates/excelCoursera.png" alt="certificate">
+                    <p>Getting Started with Microsoft Excel.png</p>
+                    <img src="./certificates/excel.png" alt="certificate">
+                    <p>Microsoft Office Specialist: Excel Associate Certification Training Program.png</p>
+                    <img src="./certificates/wordPress.png" alt="certificate">
+                    <p>Digital Non Voices Outsourcing Services WordPress.png</p>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- RESUME -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="resume" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>RESUME</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <p class="code-line">
+                            <span class="keyword">from</span>
+                            <span class="class">IPython.display</span>
+                            <span class="keyword">import</span>
+                            <span class="class">IFrame</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="variable">resume</span> = <span class="class">IFrame</span><span
+                                class="brackets">(</span><br>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="string">"./components/myCVApr26.pdf"</span>,
+                            <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="variable">width</span>=<span
+                                class="number">860</span>, <br>&nbsp;&nbsp;&nbsp;&nbsp;<span
+                                class="variable">height</span>=<span class="number">800</span><br><span
+                                class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line"><span class="variable">resume</span></p>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <div class="pdf-container">
+                        <iframe src="./resume/myCVApr26.pdf"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <div class="notebook-cell">
+            <!-- CONTACTS -->
+            <!-- MARKDOWN CELL SECTION -->
+            <section id="contacts" class="markdown-cell">
+                <span class="accent-bar"></span>
+                <h1>CONTACTS</h1>
+            </section>
+            <!-- INPUT CELL SECTION -->
+            <section class="input-cell">
+                <div class="for-input-items">
+                    <button class="run-button" type="button">▷</button>
+                    <span id="execution-count" class="execution-brackets">[ ]</span>
+                </div>
+                <div class="input-content">
+                    <div class="input-editor-cell">
+                        <!-- INPUT SOME INPUT BELOW -->
+                        <P class="code-line">
+                            <span class="comment"># My Contacts</span>
+                        </P>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="global-variable">f</span><span class="string">"</span><span class="string">Email:
+                            </span><span class="keyword">{</span><span class="variable">EMAIL</span><span
+                                class="keyword">}</span><span class="function">\n</span><span
+                                class="string">"</span><span class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="global-variable">f</span><span class="string">"</span><span
+                                class="string">LinkedIn:
+                            </span><span class="keyword">{</span><span class="variable">LINKEDIN</span><span
+                                class="keyword">}</span><span class="string">"</span><span
+                                class="function">\n</span><span class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="global-variable">f</span><span class="string">"</span><span
+                                class="string">Github:
+                            </span><span class="keyword">{</span><span class="variable">GITHUB</span><span
+                                class="keyword">}</span><span class="string">"</span><span
+                                class="function">\n</span><span class="brackets">)</span>
+                        </p>
+                        <br>
+                        <p class="code-line">
+                            <span class="function">print</span><span class="brackets">(</span><span
+                                class="global-variable">f</span><span class="string">"</span><span
+                                class="string">WhatsApp:
+                            </span><span class="keyword">{</span><span class="variable">WHATSAPP</span><span
+                                class="keyword">}</span><span class="string">"</span><span
+                                class="function">\n</span><span class="brackets">)</span>
+                        </p>
+                        <div class="input-editor-footer">
+                            <div class="execution-info">
+                                <span class="execution-status"></span>
+                                <span id="execution-time" class="execution-time"></span>
+                            </div>
+                            <span class="language-label">
+                                Python
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- OUTPUT CELL SECTION -->
+            <section id="contact-output" class="output-cell">
+                <div class="for-output-items">
+                    <button class="output-menu" type="button">...</button>
+                    <div class="output-options">
+                        <button class="clear-cell" type="button">Clear Cell Output</button>
+                    </div>
+                </div>
+                <div class="output-content">
+                    <p>Email: <a href="mailto:allenjamesvidal04@gmail.com"
+                            target="_blank">allenjamesvidal04@gmail.com</a>
+                    </p>
+                    <br>
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/allen-james-vidal-230181314/"
+                            target="_blank">linkedin.com/in/allen-james-vidal-230181314/</a>
+                    </p>
+                    <br>
+                    <p>Github: <a href="https://github.com/AJEV04" target="_blank">github.com/AJEV04</a></p>
+                    <br>
+                    <p>WhatsApp: <a href="https://wa.me/639634856084" target="_blank">+639634856084</a></p>
+                </div>
+            </section>
+        </div>
+        <!-- ========================================================================================================== -->
+        <footer>
+            <p>My Portfolio's PowerShell</p>
+            <p class="terminal-header">Copyright (C) AJEV04. All rights reserved.</p>
+            <p>
+                <span class="round-ball done">●</span>
+                <span class="prompt">PS C:\AJEV04\Admin> </span>
+                <span class="comment"># Built by Allen James Vidal &bull; 2026</span>
+            </p>
+            <p>
+                <span class="round-ball done">●</span>
+                <span class="prompt">PS C:\AJEV04\Admin> </span>
+                <span class="comment"># 100% my idea. 80% AI's work. 20% I understand the code. I think...</span>
+            </p>
+            <p>
+                <span class="round-ball">○</span>
+                <span class="prompt">PS C:\AJEV04\Admin&gt; </span>
+                <span class="cursor">█</span>
+            </p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
