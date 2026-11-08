@@ -144,8 +144,8 @@ function closePopup() {
     popup.classList.remove("visible");
 }
 
-// Show popup after page loads
-window.addEventListener("load", openPopup);
+// Show popup as soon as HTML is parsed
+openPopup();
 
 // Close using X
 closeButton.addEventListener("click", closePopup);
@@ -164,8 +164,5 @@ document.addEventListener("keydown", function (event) {
     }
 });
 
-// Customize this action
-actionButton.addEventListener("click", function () {
-    closePopup();
-});
-
+// Action button
+actionButton.addEventListener("click", closePopup);
